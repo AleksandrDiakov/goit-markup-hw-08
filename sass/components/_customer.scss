@@ -1,0 +1,45 @@
+.customer{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+  &__title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  &__company{
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: $main-transition;
+  
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      fill: $accent-color;
+      transition: $main-transition;
+    }
+  }
+
+  &__logo{
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

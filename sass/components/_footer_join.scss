@@ -1,0 +1,45 @@
+.page-footer__join {
+  margin-left: 70px;
+}
+  
+.page-footer__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $hero-text-color;
+}
+  
+.page-footer__social {
+  display: flex;
+  justify-content: space-between;
+    
+  &-item {
+    list-style: none;
+    margin-right: 10px; 
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $hero-text-color;
+    background: rgba(255, 255, 255, 0.1);
+    transition: $main-transition;
+  
+    &:hover,
+    &:focus {
+      background: $accent-color;
+      transition: $main-transition;
+    }
+  }
+}

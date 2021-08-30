@@ -1,0 +1,15 @@
+  header {
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+    
+  &__navigation {
+    display: flex;
+  }
+}
