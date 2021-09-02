@@ -1,0 +1,48 @@
+.customer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.customer__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.customer__company {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.customer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 210px;
+    height: 92px;
+    border: 1px solid $link-base-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: $link-base-color;
+    transition: $main-transition;
+}
+
+.customer__link:hover, 
+.customer__link:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+    transition: $main-transition;
+}
+
+.customer__logo {
+    margin-right: 30px;
+}
+
+.customer__logo:last-child {
+    margin-right: 0;
+}
+

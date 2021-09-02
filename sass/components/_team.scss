@@ -1,0 +1,85 @@
+.team {
+    background: $background-color-light;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__item {
+        margin-top: 30px;
+        background-color: $background-color-white;
+        box-shadow: $card-box-shadow;
+        border-radius: $card-border-radius;
+    }
+
+    &__title {
+        font-weight: bold;
+        text-align: center;  
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    &__description {
+        padding-top: 30px;
+        padding-bottom: 24px;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__position {
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $secondary-text-color;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    &__icon {
+        list-style: none;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 50%;
+        fill: $link-base-color;
+        background-color: $background-color-icon;
+        transition: $main-transition;
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            fill: $background-color-icon;
+        }
+    }
+}
