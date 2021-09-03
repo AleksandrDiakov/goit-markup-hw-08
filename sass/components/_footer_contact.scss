@@ -1,0 +1,33 @@
+.page-footer__address {
+  margin-top: 20px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $hero-text-color;
+}
+
+.page-footer__contact {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+
+    & &-item {
+    margin-top: 8px;
+    list-style: none;
+    }
+
+    & &-link {
+    text-decoration: none;
+    color: $contact-text-footer;
+    transition: $main-transition;
+    }
+
+    & &-link:hover,
+    & &-link:focus {
+    color: #8a8d8f;
+    transition: $main-transition;
+    }
+}

@@ -25,14 +25,13 @@ ul {
 }
   
 .container {
-    width: 480px;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 
-/*     @media and (min-width: 479px;) {
-    } */
+    @media (min-width: 479px) {
+        width: 480px;
+    } 
 
 }
 

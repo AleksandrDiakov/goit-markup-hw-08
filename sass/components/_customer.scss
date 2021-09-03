@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    margin-bottom: 30px;
     width: 210px;
     height: 92px;
     border: 1px solid $link-base-color;
@@ -30,6 +30,7 @@
     fill: $link-base-color;
     transition: $main-transition;
 }
+
 
 .customer__link:hover, 
 .customer__link:focus {
@@ -42,7 +43,7 @@
     margin-right: 30px;
 }
 
-.customer__logo:last-child {
+.customer__logo:nth-last-child(2n+1) {
     margin-right: 0;
 }
 
