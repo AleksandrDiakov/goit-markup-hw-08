@@ -17,6 +17,8 @@ h5
 h6
 p 
 ul {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
 }
   
@@ -29,9 +31,17 @@ ul {
     margin-right: auto;
     padding: 0 15px;
 
-    @media (min-width: 479px) {
+    @media screen and (min-width: 479px) {
         width: 480px;
     } 
+
+    @media screen and (min-width: 677px) {
+        width: 678px;
+    }
+
+    @media screen and (min-width: 1199px) {
+        width: 1200px;
+    }
 
 }
 
