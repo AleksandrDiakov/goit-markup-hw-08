@@ -27,27 +27,37 @@ ul {
 }
   
 .container {
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 
-    @media screen and (min-width: 479px) {
-        width: 480px;
-    } 
-
-    @media screen and (min-width: 677px) {
-        width: 678px;
+/*     @media screen and (min-width: 480px) {
+        .container {
+            width: 480px;
+        }
     }
 
-    @media screen and (min-width: 1199px) {
-        width: 1200px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .container {
+            width: 768px;
+        }
     }
 
+    @media screen and (min-width: 1200px) {
+        .container {
+            width: 1200px;
+        }
+    } */
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  cursor: pointer;
 }
   

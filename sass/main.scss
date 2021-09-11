@@ -2,7 +2,7 @@
 @import "./utils/base";
 @import "./utils/breakpoints";
 @import "./components/header";
-@import "./components/header_logo";
+@import "./components/_logo";
 @import "./components/header_menu_burger";
 @import "./components/header_menu";
 @import "./components/header_contact";
@@ -15,7 +15,6 @@
 @import "./components/gallary";
 @import "./components/gallary_overlay";
 @import "./components/footer";
-@import "./components/footer_logo";
 @import "./components/footer_contact";
 @import "./components/footer_join";
 @import "./components/footer_signature";

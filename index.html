@@ -23,18 +23,65 @@
                     <span class="page-header__logo--web" id="logo">Web</span><span class="page-header__logo--studio">Studio</span>
                 </a>
                 <button class="page-header__menu-burger" 
-                type="button" 
-                aria-expanded="false"
-                aria-controls="page-header__menu-nav"
-                data-menu-button>
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    type="button" 
+                    aria-expanded="false"
+                    aria-controls="page-header__menu-mob"
+                    data-menu-button>
+                    <svg 
+                    width="40" 
+                    height="40" 
+                    aria-label="Переключатель мобильного меню">
                         <use class="page-header__icon-cross" href="./images/icons.svg#cross"></use>
                         <use class="page-header__icon-menu" href="./images/icons.svg#menu"></use>
                     </svg>
                 </button>
-                <div class="page-header__menu-nav" 
-                id="page-header__menu-nav" 
-                data-menu>контент-меню</div>
+
+<!--                 <div class="page-header__menu-mob" id="page-header__menu-mob" data-menu>
+
+                        <ul class="page-header__menu-list">
+                            <li class="page-header__menu-item list-style">
+                                <a class="page-header__menu-link current" href="index.html">Студия</a>
+                            </li>
+                            <li class="page-header__menu-item list-style">
+                                <a class="page-header__menu-link" href="portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="page-header__menu-item list-style">
+                                <a class="page-header__menu-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <ul class="page-header__menu-nav-contact">
+                            <li class="page-header__contact-item list-style">
+                                <a class="page-header__contact--call" href="tel:+380961111111">
+                                <svg class="page-header__contact-icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11</a>
+                            </li>
+                            <li class="page-header__contact-item list-style">
+                                <a class="page-header__contact--mailto" href="mailto:info@devstudio.com">
+                                <svg class="page-header__contact-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com</a>
+                            </li>
+                        </ul>
+
+                        <ul class="page-header__menu-social">
+                            <li class="page-header__social-item">
+                                <a class="page-header__social-link" href="#">Instagram</a>
+                            </li>
+                            <li class="page-header__social-item">
+                                <a class="page-header__social-link" href="#">Facebook</a>
+                            </li>
+                            <li class="page-header__social-item">
+                                <a class="page-header__social-link" href="#">Twitter</a>
+                            </li>
+                            <li class="page-header__social-item">
+                                <a class="page-header__social-link" href="#">Linkedin</a>
+                            </li>
+                        </ul>
+                        
+                    
+                </div> -->
 
 <!--                 <ul class="page-header__menu">
                     <li class="page-header__menu-item list-style">
@@ -46,9 +93,9 @@
                     <li class="page-header__menu-item list-style">
                         <a class="page-header__menu-link" href="#">Контакты</a>
                     </li>
-                </ul>
+                </ul> -->
             </nav>
-            <ul class="page-header__contact">
+<!--             <ul class="page-header__contact">
                 <li class="page-header__contact-item list-style">
                     <a class="page-header__contact--mailto" href="mailto:info@devstudio.com">
                     <svg class="page-header__contact-icon" width="16" height="12">
@@ -70,7 +117,7 @@
             <div class="hero__wrapper container" >
                 <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
-                <div class="hero__backdrop is-hidden" data-modal>
+                <!-- <div class="hero__backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="modal__close" type="button" data-modal-close>
                             <svg class="modal__icon--cross">
@@ -95,8 +142,8 @@
                                 </svg>
                             </div>
                             <div class="modal__form--field">
-                                <label class="modal__form--label" for="mail">Почта</label>
-                                <input class="modal__form--input" type="mail" name="mail" id="mail">
+                                <label class="modal__form--label" for="email">Почта</label>
+                                <input class="modal__form--input" type="email" name="email" id="e44mail">
                                 <svg class="modal__form--icon">
                                     <use href="./images/icons.svg#icon-email"></use>
                                 </svg>
@@ -111,13 +158,13 @@
                                     <svg class="modal__checkbox--icon-check">
                                         <use href="./images/icons.svg#icon-check"></use>
                                     </svg>
-                                </span class="modal__checkbox--icon">
+                                </span>
                                 Соглашаюсь с рассылкой и принимаю
                                 <a class="form__conditions--link" href="#">Условия договора</a>
                               </label>
                         </form>
                         <button class="modal__button hero__button" type="submit">Отправить</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -168,7 +215,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <!-- <section class="work">
             <div class="container">
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__description">
@@ -192,14 +239,14 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <section class="team">
             <div class="team__wrapp container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__block">
                     <li class="team__item list-style">
-                        <a class="team__photo" href="#"><img src="./images/mobile/man1_1x.jpg" alt="Игорь Демьяненко" width="450"></a>
+                        <a class="team__photo" href="#"><img src="./images/mobile/mob-man1_1x.jpg" alt="Игорь Демьяненко" width="450"></a>
                         <div class="team__description">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__position">Product Designer</p>
@@ -236,7 +283,7 @@
                         </div>
                     </li>
                     <li class="team__item list-style">
-                        <a class="team__photo" href="#"><img src="./images/mobile/women1_1x.jpg" alt="Ольга Репина" width="450"></a>
+                        <a class="team__photo" href="#"><img src="./images/mobile/mob-women1_1x.jpg" alt="Ольга Репина" width="450"></a>
                         <div class="team__description">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -273,7 +320,7 @@
                         </div>
                     </li>
                     <li class="team__item list-style">
-                        <a class="team__photo" href="#"><img src="./images/mobile/man2_1x.jpg" alt="Николай Тарасов" width="450"></a>
+                        <a class="team__photo" href="#"><img src="./images/mobile/mob-man2_1x.jpg" alt="Николай Тарасов" width="450"></a>
                         <div class="team__description">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__position">Marketing</p>
@@ -310,7 +357,7 @@
                         </div>
                     </li>
                     <li class="team__item list-style">
-                        <a class="team__photo" href="#"><img src="./images/mobile/man3_1x.jpg" alt="Михаил Ермаков" width="450"></a>
+                        <a class="team__photo" href="#"><img src="./images/mobile/mob-man3_1x.jpg" alt="Михаил Ермаков" width="450"></a>
                         <div class="team__description">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__position">UI Designer</p>

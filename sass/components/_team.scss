@@ -1,8 +1,8 @@
 .team {
-    background: $background-color-light;
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background: $background-color-light;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
     &__item {
         margin-top: 30px;
@@ -13,17 +13,10 @@
 
     &__title {
         font-weight: bold;
-        text-align: center;  
-        font-size: 28px;
-        line-height: 1.14;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
         letter-spacing: 0.03em;
-    }
-
-    &__block {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
     }
 
     &__description {
@@ -57,27 +50,30 @@
 
     &__icon {
         list-style: none;
+        margin-right: 10px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__link {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         margin-right: 10px;
         border-radius: 50%;
         fill: $link-base-color;
         background-color: $background-color-icon;
         transition: $main-transition;
 
-
         &:last-child {
             margin-right: 0;
         }
 
-        &:hover,
-        &:focus {
+        &:hover, &:focus {
             background-color: $accent-color;
             fill: $background-color-icon;
         }
