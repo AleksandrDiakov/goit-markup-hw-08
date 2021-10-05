@@ -8,6 +8,7 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
   position: fixed;
+  overflow-y: scroll;
 }
 
 .hero__backdrop.is-hidden {
@@ -28,8 +29,8 @@
   width: 450px;
   height: 589px;
   padding: 40px;
-  background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: $background-color-white;
+  box-shadow: $card-box-shadow;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -43,7 +44,7 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
+  background-color: $background-color-white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -58,7 +59,7 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $primary-text-color;
 }
 
 .modal__form {
@@ -75,7 +76,7 @@
 
 .modal__form--field:hover .modal__form--icon,
 .modal__form--field:focus-within .modal__form--icon {
-  fill: #2196f3;
+  fill: $accent-color;
 }
 
 .modal__form--field:focus-within .modal__form--input {
@@ -90,7 +91,7 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $secondary-text-color;
 }
 
 .modal__form--input {
@@ -115,7 +116,7 @@
   position: absolute;
   left: 10px;
   top: 50%;
-  fill: #212121;
+  fill: $primary-text-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -127,8 +128,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  color: #212121;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $primary-text-color;
+  transition: $main-transition;
 }
 
 .modal__form--comment:hover, .modal__form--comment:focus {
@@ -152,12 +153,12 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $secondary-text-color;
   cursor: pointer;
 }
 
 .modal__conditions--link {
-  color: #2196f3;
+  color: $accent-color;
   font-family: inherit;
 }
 
@@ -172,12 +173,12 @@
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: $background-color-white;
 }
 
 .modal__checkbox:checked + .modal__checkbox--icon {
-  background-color: #2196f3;
-  border-color: #2196f3;
+  background-color: $accent-color;
+  border-color: $accent-color;
 }
 
 .modal__button {
@@ -192,5 +193,5 @@
 }
 
 .modal__icon--cross:hover, .modal__icon--cross:focus {
-  fill: #2196f3;
+  fill: $accent-color;
 }

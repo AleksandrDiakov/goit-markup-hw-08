@@ -3,6 +3,10 @@ body {
     color: $primary-text-color;
     background-color: #ffffff;
 }
+
+.body.modal-open {
+    overflow: hidden;
+}
   
 * {
     margin: 0;
@@ -52,12 +56,12 @@ ul {
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
   

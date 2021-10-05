@@ -1,0 +1,105 @@
+.page-header__menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .page-header__menu {
+        display: none;
+    }
+}
+
+/* .page-header__menu .list-style {
+    margin-right: 50px;
+}
+
+.page-header__menu .list-style:last-child {
+    margin-right: 0;
+}
+
+.page-header__menu .page-header__menu-link {
+    display: flex;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: $main-transition;
+}
+
+.page-header__menu .page-header__menu-link:hover, .page-header__menu .page-header__menu-link:focus {
+    color: $accent-color;
+    transition: $main-transition;
+}
+
+.page-header__menu .page-header__menu-link.current {
+    color: $accent-color;
+    position: relative;
+}
+
+.page-header__menu .page-header__menu-link.current::after {
+    content: "";
+    position: absolute;
+    bottom: -33.6px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+} */
+
+.page-header__contact {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 767px) {
+    .page-header__contact {
+        display: none;
+    }
+}
+
+/* .page-header__contact .list-style {
+    margin-right: 50px;
+}
+
+.page-header__contact .list-style:last-child {
+    margin-right: 0;
+}
+
+.page-header__contact--mailto {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #757575;
+    transition: $main-transition;
+}
+
+.page-header__contact--mailto:hover, .page-header__contact--mailto:focus {
+    color: $accent-color;
+    transition: $main-transition;
+}
+
+.page-header__contact--call {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #757575;
+    transition: $main-transition;
+}
+
+.page-header__contact--call:hover, .page-header__contact--call:focus {
+    color: $accent-color;
+    transition: $main-transition;
+}
+
+.page-header__contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+} */
