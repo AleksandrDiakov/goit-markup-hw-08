@@ -11,7 +11,6 @@
     overflow-y: scroll;
     z-index: 99;
 
-
     &.is-open {
         transform: translateX(0);
     }
@@ -25,8 +24,7 @@
 
 .page-header__menu-item {
     margin-top: 32px;
-    
-
+   
     &:first-child {
         margin-top: 0;
     }
@@ -52,7 +50,6 @@
 @media (min-width: 768px) {
    .page-header__menu-burger {
        display: none;
-      
    } 
 }
 
