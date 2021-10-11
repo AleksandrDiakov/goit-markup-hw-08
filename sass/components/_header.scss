@@ -8,3 +8,11 @@ header  {
     justify-content: space-between;
     padding: 10px 0;
 }
+
+
+
+@media (min-width: 768px) {
+    .page-header__navigation {
+        padding: 0;
+    }
+}

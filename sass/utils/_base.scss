@@ -30,13 +30,23 @@ ul {
     list-style-type: none;
 }
   
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+  
 .container {
-    max-width: 480px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 
-/*     @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 768px){
         .container {
             width: 480px;
         }
@@ -52,16 +62,5 @@ ul {
         .container {
             width: 1200px;
         }
-    } */
+    }
 }
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    cursor: pointer;
-}
-  

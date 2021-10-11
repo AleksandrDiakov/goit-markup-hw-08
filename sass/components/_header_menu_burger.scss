@@ -16,13 +16,13 @@
     }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
    .page-header__menu-mob {
        display: none;
    } 
-}
+} */
 
-.page-header__menu-item {
+.page-header__menu-mob-item {
     margin-top: 32px;
    
     &:first-child {
@@ -30,7 +30,7 @@
     }
 }
 
-.page-header__menu-link {
+.page-header__menu-mob-link {
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -83,7 +83,7 @@
     margin-top: 32px;  
 }
 
-.page-header__contact--call {
+.page-header__menu-contact--call {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
@@ -92,7 +92,7 @@
     text-decoration: none;
 }
 
-.page-header__contact--mailto {
+.page-header__menu-contact--mailto {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
