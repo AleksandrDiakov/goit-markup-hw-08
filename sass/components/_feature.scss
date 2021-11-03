@@ -1,11 +1,40 @@
 .feature {
     padding: 60px 0;
 
-    &__description .list-style {
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+
+    &__description{
+        @media screen and(min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+        @media screen and(min-width:1200px) {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    }
+
+    &__description .feature__item {
         margin-top: 30px;
 
         &:first-child {
             margin-top: 0;
+
+            @media screen and(min-width:768px){
+                margin-top: 15px;
+            }
+        }
+        @media screen and(min-width:768px){
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+        @media screen and(min-width:1200px) {
+            
+            width: 270px
         }
     }
 
@@ -34,5 +63,6 @@
         color: #757575;
         letter-spacing: 0.03em;
     }
+    
 }
 

@@ -1,13 +1,40 @@
 .hero {
     text-align: center;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mob-header1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding: 118px 0;
+
+    @media screen and (max-width:767px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mob-header1x.jpg);
+    
+        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mob-header2x.jpg);
+        }
+    }
+    @media screen and (min-width:768px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/tab-header1x.jpg);
+    
+        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/tab-header2x.jpg);
+        }
+    }
+    @media screen and (min-width:1200px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header1x.jpg);
+        background-size: 1600px 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    
+        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/header2x.jpg);
+        }
+    }
+
+    &__wrapper {    
+        width: 100%;
+    }
 
     &__title {
         font-weight: 900;
@@ -17,6 +44,11 @@
         text-transform: uppercase;
         color: $hero-text-color;
         text-align: center;
+    
+        @media screen and (min-width:1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 
     &__button {

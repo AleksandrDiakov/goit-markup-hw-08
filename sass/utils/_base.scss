@@ -27,7 +27,9 @@ ul {
 }
   
 .list-style {
-    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
   
 img {
@@ -41,26 +43,17 @@ button {
 }
   
 .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 
-    @media screen and (min-width: 320px) and (max-width: 768px){
-        .container {
-            width: 480px;
-        }
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        .container {
-            width: 768px;
-        }
-    }
-
-    @media screen and (min-width: 1200px) {
-        .container {
-            width: 1200px;
-        }
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width:768px) {
+    width: 768px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 1200px;
+  }
 }

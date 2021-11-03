@@ -1,0 +1,134 @@
+.menu-mob__container {
+    @media screen and (min-width:768px) {
+      display: none;
+    }
+}
+
+.menu-mob__burger {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+
+.menu-mob__burger--close {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+}
+
+.menu-mob__item-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $primary-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.menu-mob__item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.menu-mob__container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background: $background-color-white;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+.menu-mob__container.is-open {
+    transform: translateX(0);
+}
+
+.menu-mob__contact {
+    margin-top: auto;
+}
+
+.menu-mob__contact-item {
+  margin-bottom: 32px;
+}
+
+.contact-item__call {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $accent-color;
+}
+
+.contact-item__mailto {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+    text-decoration: none;
+}
+
+.menu-mob__social {
+    display: flex;
+    margin-top: 64px;
+}
+
+.menu-mob__social-link {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $accent-color;
+  text-decoration: none;
+}
+
+.menu-mob__social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-mob__social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}

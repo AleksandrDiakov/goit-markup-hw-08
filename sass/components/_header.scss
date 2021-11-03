@@ -1,19 +1,17 @@
-header  {
+.page-header {
     border-bottom: 1px solid #ECECEC;
+    width: 100%;
 }
 
-
-.page-header__navigation {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    padding: 10px 0;
-}
-
-
-
-@media (min-width: 768px) {
-    .page-header__navigation {
+/* @media (min-width: 768px) {
+    .page-header {
         padding: 0;
     }
+} */
+
+.page-header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
