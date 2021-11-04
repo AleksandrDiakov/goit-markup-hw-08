@@ -3,9 +3,19 @@
     font-family: Raleway;
     font-weight: bold;
     font-size: 24px;
-    line-height: 1.16;
+    line-height: 1.375;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    @media (min-width: 768px) {
+        padding: 25px 0;
+        margin-right: 88px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.38;
+        margin-right: 93px;
+    }
 
     &-web {
         color: $accent-color;
@@ -14,12 +24,6 @@
     &-studio {
         color: $primary-text-color;
     }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__logo {
-    padding: 25px 0;
-  }
 }
 
 

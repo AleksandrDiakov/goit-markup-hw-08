@@ -1,10 +1,114 @@
-.page-header__menu,
-.menu__contacts {
-    @media (max-width: 768px){
+.page-header__menu {
+    @media (max-width: 767px){
     display: none;
+    }
+    @media (min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
     }
 }
 
-.current {
-    color: #2196f3;
-  }
+.page-header__menu .menu__list{
+    display: flex;
+}
+
+.menu__item:not(:last-child){
+    margin-right: 50px;
+}
+.menu__item:last-child{
+    margin-right: 61px;
+}
+
+@media (min-width: 767px) {
+    .menu__contact-mailto {
+        margin-bottom: 10px;
+        
+    }
+}
+@media (min-width: 1200px) {
+    .menu__contact-mailto {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+}
+
+.menu__link {
+    
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: $main-transition;
+}
+
+.page-header__menu .menu__link:hover, .page-header__menu .menu__link:focus {
+    color: $accent-color;
+    transition: $main-transition;
+}
+
+.page-header__menu .menu__link.current {
+    color: $accent-color;
+    position: relative;
+}
+
+.page-header__menu .menu__link.current::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    bottom: -33px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+}
+
+.menu__contacts {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    @media (max-width: 768px){
+        display: none;
+    }
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: end;
+        font-size: 14px;
+    }
+}
+
+
+.menu__contact-mailto {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $secondary-text-color;
+    transition: $main-transition;
+}
+
+.menu__contact-mailto:hover, .menu__contact-mailto:focus {
+    color: $accent-color;
+    transition: $main-transition;
+}
+
+.menu__contact-call {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #757575;
+    transition: $main-transition;
+}
+
+.menu__contact-call:hover, .menu__contact-call:focus {
+    color: $accent-color;
+    transition: $main-transition;
+}
+
+.menu__contact-icon {
+    margin-right: 10px;
+    fill: currentcolor;
+}
