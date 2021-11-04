@@ -26,8 +26,7 @@
     }
 }
 
-
-/* .page-footer__logo {
+.page-footer__logo {
     font-family: Raleway;
     font-weight: bold;
     font-size: 24px;
@@ -35,11 +34,16 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 
-    .page-footer__logo--web {
+    @media (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.38;
+    }
+
+    &--web {
         color: $accent-color;
     }
 
-    .page-footer__logo--studio {
+    &--studio {
         color: $hero-text-color;
     }
-} */
+}
