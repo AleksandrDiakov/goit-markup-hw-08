@@ -11,7 +11,8 @@
         @media (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
-            margin: -15px;
+            justify-content: space-between;
+            margin-top: 0;
         }
         @media (min-width: 1200px) {
             display: flex;
@@ -25,6 +26,13 @@
         background-color: $background-color-white;
         box-shadow: $card-box-shadow;
         border-radius: $card-border-radius;
+
+        @media (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 2);
+        }
+        @media (min-width: 1200px) {
+            width: calc((100% - 4 * 30px) / 4);
+        }
     }
 
     &__title {
