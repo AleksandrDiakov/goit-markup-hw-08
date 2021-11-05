@@ -36,10 +36,6 @@
     border-radius: 4px;
     transition: transform $main-transition;
 
-    @media (max-width: 480px) {
-        width: 450px;
-        height: 560px;
-    }
     @media (min-width: 1200px) {
         width: 528px;
         height: 581px;
