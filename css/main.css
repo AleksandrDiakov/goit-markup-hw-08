@@ -66,6 +66,14 @@ button {
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .page-header {
   border-bottom: 1px solid #ECECEC;
   width: 100%;
@@ -1209,6 +1217,10 @@ button {
   }
 }
 
+.gallary__list {
+  margin-top: 40px;
+}
+
 footer {
   background: #2F303A;
   padding: 60px 0;
@@ -1424,5 +1436,80 @@ footer {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: #ffffff;
+}
+
+.filter__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+@media (max-width: 246px) {
+  .filter__group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.filter__item {
+  margin-right: 8px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.filter__item:last-child {
+  margin-right: 0;
+}
+
+.filter__item:nth-last-child(-n + 2) {
+  margin-top: 15px;
+}
+
+@media (max-width: 399px) {
+  .filter__item:nth-last-child(-n + 3) {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 246px) {
+  .filter__item:nth-last-child(-n + 4) {
+    margin-top: 15px;
+  }
+}
+
+.filter__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  border: none;
+  background: #F5F4FA;
+  border-radius: 4px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__button:hover, .filter__button:focus {
+  color: #ffffff;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */
