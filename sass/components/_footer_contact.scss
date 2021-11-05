@@ -1,31 +1,35 @@
 .page-footer__address {
-  margin-top: 20px;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #ffffff;
 }
 
 .page-footer__contact {
-  margin-top: 8px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
-
+    
 .page-footer__contact .page-footer__contact-item {
-  margin-top: 8px;
-  list-style: none;
+    margin-top: 8px;
+    list-style: none;
+
+    @media (min-width: 1200px) {
+        margin-top: 9px;
+    }
 }
 
 .page-footer__contact .page-footer__contact-link {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-footer__contact .page-footer__contact-link:hover, .page-footer__contact .page-footer__contact-link:focus {
-  color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2196f3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

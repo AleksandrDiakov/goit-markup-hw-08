@@ -1,5 +1,19 @@
 .page-footer__signature {
     margin-top: 60px;
+    @media (min-width: 1200px) {
+        
+        margin-top: 0;
+        margin-left: 93px;
+    }
+}
+
+.page-footer__signature-field {
+    @media (min-width: 768px) {
+        
+    }
+    @media (min-width: 1200px) {
+        display: flex;    
+    }
 }
 
 .page-footer__signature-email {
@@ -7,16 +21,27 @@
     height: 50px;
     padding: 15px 16px;
     
-    margin-right: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: $background-color-dark;
+
+    @media (min-width: 768px) {
+        width: 450px;
+    }
+    @media (min-width: 1200px) {
+        width: 358px;
+        margin-right: 10px;
+    }
 }
 
 .page-footer__button {
     position: relative;
     padding: 10px 62px 10px 29px;
     margin-top: 20px;
+
+    @media (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
 .page-footer__icon-send {

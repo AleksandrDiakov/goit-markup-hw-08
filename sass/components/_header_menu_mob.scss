@@ -1,5 +1,5 @@
 .menu-mob__container {
-    @media screen and (min-width:768px) {
+    @media (min-width:768px) {
       display: none;
     }
 }
@@ -9,15 +9,13 @@
     padding: 0;
     background-color: transparent;
     cursor: pointer;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $main-transition;
   
   &:hover,
   &:focus {
     fill: $accent-color;
   }
-  @media screen and (min-width:768px) {
+  @media (min-width:768px) {
     display: none;
   }
 }
@@ -30,9 +28,7 @@
     padding: 0;
     background-color: transparent;
     cursor: pointer;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $main-transition;
   
     &:hover,
     &:focus {
@@ -48,16 +44,12 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $primary-text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $main-transition;
 
     &:hover,
     &:focus {
       color: $accent-color;
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $main-transition;
     }
 }
 
@@ -131,4 +123,8 @@
 .menu-mob__social-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
+}
+
+.current {
+  color: $accent-color;
 }

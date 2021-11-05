@@ -5,4 +5,22 @@ footer {
 
 .page-footer {
     text-align: center;
+
+    @media (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: end;
+        text-align: start;
+    }
+}
+
+.page-footer-tab {
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    @media (min-width: 768px) {
+        align-items: baseline;
+    }
 }

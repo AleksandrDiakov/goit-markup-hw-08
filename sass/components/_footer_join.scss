@@ -1,5 +1,13 @@
 .page-footer__join {
     margin-top: 60px;
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+    @media (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: 70px;
+    }
 }
 
 .page-footer__title {
