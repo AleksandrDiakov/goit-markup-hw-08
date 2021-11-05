@@ -21,14 +21,19 @@
     margin-top: 15px
 }
 
-@media (max-width: 399px) {
-    .filter__item:nth-last-child(-n + 3) {
-        margin-top: 15px
-    }
-}
 @media (max-width: 246px) {
     .filter__item:nth-last-child(-n + 4) {
-        margin-top: 15px
+        margin-top: 15px;
+    }
+}
+@media (max-width: 399px) {
+    .filter__item:nth-last-child(-n + 3) {
+        margin-top: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .filter__item:nth-last-child(-n + 3) {
+        margin-top: 0;
     }
 }
 
