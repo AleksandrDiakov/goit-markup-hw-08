@@ -29,12 +29,21 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 450px;
-    height: 589px;
+    height: 609px;
     padding: 40px;
     background: $background-color-white;
     box-shadow: $card-box-shadow;
     border-radius: 4px;
     transition: transform $main-transition;
+
+    @media (max-width: 480px) {
+        width: 450px;
+        height: 560px;
+    }
+    @media (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 
     &__close {
         position: absolute;
