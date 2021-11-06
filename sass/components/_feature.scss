@@ -46,12 +46,17 @@
     }
 
     &__title {
+        text-align: center;
         margin-top: 30px;
         font-weight: bold;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        @media (min-width: 768px){
+            text-align: left;
+        }
     }
 
     &__text {

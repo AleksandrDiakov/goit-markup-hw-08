@@ -3,8 +3,14 @@
     flex-wrap: wrap;
     margin-top: 60px;
 
-    @media (max-width: 246px){
+    @media (max-width: 246px) {
         justify-content: center;
+    }
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
+    @media (min-width: 1200px) {
+        margin-top: 94px;
     }
 }
 

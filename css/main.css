@@ -898,12 +898,19 @@ button {
 }
 
 .feature__title {
+  text-align: center;
   margin-top: 30px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .feature__title {
+    text-align: left;
+  }
 }
 
 .feature__text {
@@ -1029,13 +1036,13 @@ button {
 
 @media (min-width: 768px) {
   .team__item {
-    width: calc((100% - 2 * 30px) / 2);
+    width: 354px;
   }
 }
 
 @media (min-width: 1200px) {
   .team__item {
-    width: calc((100% - 4 * 30px) / 4);
+    width: 270px;
     margin-top: 0;
   }
 }
@@ -1261,15 +1268,15 @@ button {
 
 @media (min-width: 768px) {
   .gallary__card {
-    max-width: 354px;
-    width: calc(100% / 2 - 30px);
+    width: 354px;
+    /*  width: calc(100% / 2 - 30px); */
   }
 }
 
 @media (min-width: 1200px) {
   .gallary__card {
-    max-width: 370px;
-    width: calc(100% / 3);
+    width: 370px;
+    /* width: calc(100% / 3); */
   }
 }
 
@@ -1615,6 +1622,20 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter__group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter__group {
+    margin-top: 94px;
   }
 }
 

@@ -22,12 +22,12 @@
     transition: $main-transition;
     
     @media (min-width: 768px) {
-        max-width: 354px;
-        width: calc(100% / 2 - 30px);
+        width: 354px;
+       /*  width: calc(100% / 2 - 30px); */
     }
     @media (min-width: 1200px) {
-        max-width: 370px;
-        width: calc(100% / 3);
+        width: 370px;
+        /* width: calc(100% / 3); */
     }
     @media (min-width: 1200px){
         &:nth-last-child(-n + 3) {
@@ -45,8 +45,6 @@
         transition: $main-transition;
     }
 }
-
-
 
 .gallary__link {
   display: block;
